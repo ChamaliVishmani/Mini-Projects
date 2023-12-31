@@ -8,6 +8,9 @@ import {
   Wrap,
   Image,
   Link,
+  SkeletonCircle,
+  SkeletonText,
+  Stack,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useState } from "react";
@@ -15,10 +18,13 @@ import { useState } from "react";
 const App = () => {
   const [image, updateImage] = useState();
   const [prompt, updatePrompt] = useState();
+  const [loading, updateLoading] = useState();
 
   const generate = (prompt) => {
+    updateLoading(true);
     const result = axios.get(`http://127.0.0.1:8000/?prompt=${prompt}`);
     updateImage(result.data);
+    updateLoading(false);
   };
 
   return (
@@ -44,7 +50,14 @@ const App = () => {
           </Button>
         </Wrap>
 
-        {image ? <Image src={`data:image/png;base64,${image}`} /> : null}
+        {loading ? (
+          <Stack>
+            <SkeletonCircle />
+            <SkeletonText />
+          </Stack>
+        ) : image ? (
+          <Image src={`data:image/png;base64,${image}`} />
+        ) : null}
       </Container>
     </ChakraProvider>
   );
