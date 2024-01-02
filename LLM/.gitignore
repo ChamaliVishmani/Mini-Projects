@@ -1,2 +1,5 @@
 config
 .ipynb_checkpoints
+/faiss_index/
+/.env
+.idea
