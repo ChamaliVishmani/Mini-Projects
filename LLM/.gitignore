@@ -3,3 +3,5 @@ config
 /faiss_index/
 /.env
 .idea
+__pycache__
+```
