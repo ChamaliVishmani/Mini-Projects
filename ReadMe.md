@@ -14,9 +14,9 @@
 
 ## Virtual Agent
 
-- 04/02/2024
-  - [Watson assistant](https://au-syd.assistant.watson.cloud.ibm.com/)
-  - [YouTube - Build a Virtual Agent in 15 minutes with Watson Assistant Actions | Chatbot Tutorial - Nicholas Renotte](https://youtu.be/0sgjH5NWbNw?si=ZyfpZMbjN5j1e2AS)
+- (04/02/2024)
+- [Watson assistant](https://au-syd.assistant.watson.cloud.ibm.com/)
+- [YouTube - Build a Virtual Agent in 15 minutes with Watson Assistant Actions | Chatbot Tutorial - Nicholas Renotte](https://youtu.be/0sgjH5NWbNw?si=ZyfpZMbjN5j1e2AS)
 
 ## LLM Course
 
