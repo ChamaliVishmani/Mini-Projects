@@ -52,3 +52,7 @@
 
 - HackerRank
 - [HackerRank Profile](https://www.hackerrank.com/profile/chamali_vishmani)
+
+# Langchain docs
+
+[Langchain Docs](https://python.langchain.com/docs)
